@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    background-image: url(img/wave.svg), url(img/bosque.jpg);
+    background-size: auto 60%, auto;
+    background-position: left top, right 0%;
+    background-repeat: no-repeat, repeat;
+    
+}
+
+container{
+    width: 90%;
+    margin-left: 20%;
+    display: flex;
+   
+}
+
+h1{
+    margin-left: 1.5%;
+    margin-top: 2%;
+    color: #44bd32;
+    font-family: 'Koulen', cursive;
+}
+
+.verde{
+    border-radius: 10px;
+    width: 10%;
+    height: 5%;
+}
+
+section{
+    display: block;
+    width: 100%;
+    height:26rem;
+    margin-left: 5%;
+  
+}
+ canvas{
+     display: inline-flex;
+     border: solid 3px;
+     border-radius: 2%;
+     background-color: #FFFFFF;
+     width: 65%;
+     height: 100%;
+
+ }
+
+ canvas:hover{
+    -webkit-box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+    -moz-box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+    box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+ }
+
+
+ .herramienta{
+    display: inline-flex;
+    border: solid 2px;
+    border-radius: 2%;
+    background-color: #dcdde1;
+    width: 30%;
+    height: 100%;
+    margin-left: 2.5%;
+
+ }
+
+.herramienta:hover{
+    background-color: #ecf0f1;
+    -webkit-box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+    -moz-box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+     box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
+}
+
+
+ footer{
+    background-image: url(img/waveRR.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 90rem;
+    height: 13rem;
+    margin-top: -5rem ;
+   
+ 
+ }
+
+ footer p{
+     margin-left: 33%;
+     margin-top: 9rem;
+     font-size: 20px;
+     font-family: 'Koulen', cursive;
+     position: absolute;
+
+ }
+
+ .img{
+    margin-left: 85%;
+    margin-top: 8rem;
+ }
