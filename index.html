@@ -20,8 +20,12 @@
     <section>
                 <canvas  id="dibujar"></canvas>
                     <div class="herramienta">
+                        <div class="inputdiv">
+                            <input type="color" id="color" oninput="color(this.value);" />
+                            <input type="range" id="grosorPluma" oninput="grosorPluma(this.value);"  min="1" max="10" value="1" />
+                        </div>
                     </div>
-                </section>  
+    </section>  
                 
                 <footer>
                     <p><strong>Juan Diego Fernandez &#169 2022 </strong> </p>
