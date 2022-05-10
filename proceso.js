@@ -52,26 +52,3 @@ function grosorPluma(grosor) {
 function limpiar(){
     lienzo.clearRect(0,0,canva.width, canva.height);
 }
-/**
- * Creacion de las funciones 
-
- var color = document.getElementById("p");
-function colorTrazo(color){
-    colorInicial = color;
-}
-
-function grosorPluma(g){
-    grosorIncial= g;
-}
-
-function dibujar(x1,y1,x2,y2){
-    lienzo.beginPath();
-    lienzo.strokeStyle = colorTrazo;
-    lienzo.lineWidth = grosorPluma;
-    lienzo.moveTo(x1, y1);
-    lienzo.lineTo(x2, y2);
-    lienzo.stroke();
-    lienzo.closePath();
-}
-
- */

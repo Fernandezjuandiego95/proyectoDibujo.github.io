@@ -38,14 +38,13 @@ section{
     width: 100%;
     height:25.5rem;
     margin-left: 5%;
-background-color: #44bd32;
+ 
 }
  canvas{
-    display: inline-flex;
-     border: solid 3px;
-     margin-bottom: 20px;
+     display: inline-flex;
+     border: solid 5px;
+     border-radius: 2%;
      background-color: #FFFFFF;
-
  }
 
  canvas:hover{
@@ -63,8 +62,6 @@ background-color: #44bd32;
     width: 30%;
     height: 100%;
     margin-left: 2.5%;
-    margin-bottom: 18px;
-   position: relative;
 
  }
 
@@ -75,33 +72,37 @@ background-color: #44bd32;
      box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
 }
 
-/*
+
  footer{
     background-image: url(img/waveRR.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     width: 90rem;
     height: 13rem;
-    margin-top: -5rem ;
+    margin-top: -4.5rem ;
    
  
  }
 
  footer p{
-     margin-left: 33%;
-     margin-top: 9rem;
-     font-size: 20px;
+     margin-left: 37%;
+     margin-top: 10rem;
+     font-size: 18px;
      font-family: 'Koulen', cursive;
-     position: relative;
+     position: absolute;
 
  }
 
- .img{
-    margin-left: 85%;
-    margin-top: 8rem;
+ a{
+    margin-left: 93%;
+    margin-top: 10%;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #44bd32;
  }
-*/
+
  .inputdiv{
      position: absolute;
  }
