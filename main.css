@@ -36,17 +36,15 @@ h1{
 section{
     display: block;
     width: 100%;
-    height:26rem;
+    height:25.5rem;
     margin-left: 5%;
-   background-color: aquamarine;
+background-color: #44bd32;
 }
  canvas{
-     display: inline-flex;
+    display: inline-flex;
      border: solid 3px;
-     border-radius: 2%;
+     margin-bottom: 20px;
      background-color: #FFFFFF;
-     width: 65%;
-     height: 100%;
 
  }
 
@@ -65,6 +63,7 @@ section{
     width: 30%;
     height: 100%;
     margin-left: 2.5%;
+    margin-bottom: 18px;
    position: relative;
 
  }
@@ -76,7 +75,7 @@ section{
      box-shadow: 12px 13px 9px 0px rgba(226,245,226,1);
 }
 
-
+/*
  footer{
     background-image: url(img/waveRR.svg);
     background-size: cover;
@@ -94,7 +93,7 @@ section{
      margin-top: 9rem;
      font-size: 20px;
      font-family: 'Koulen', cursive;
-     position: absolute;
+     position: relative;
 
  }
 
@@ -102,7 +101,7 @@ section{
     margin-left: 85%;
     margin-top: 8rem;
  }
-
+*/
  .inputdiv{
      position: absolute;
  }
