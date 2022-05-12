@@ -1,54 +1,61 @@
 /**
- * 
+ * Obteniendo el id del canvas y creando el liendo donde dibujar
  */
-
-
-
 var canva = document.getElementById("dibujar");
 var lienzo = canva.getContext("2d");
     lienzo.lineWidth = 1;
+var crear = false;
 
-    var ruta=false;
+/**
+ * Creacion de Eventos para dibujar en el lienzo 
+ */
+canva.addEventListener("mousemove", dibujar);
 
+canva.addEventListener("mousedown", punteroAbajo);
 
+canva.addEventListener("mouseup",punteroArriba);
 
+/**
+ * Creacion de las funciones para dibujar en el lienzo 
+ */
 function dibujar(evento){
 
-    x=evento.clientX - canva.offsetLeft;
-    y=evento.clientY - canva.offsetTop;
+    x = evento.clientX - canva.offsetLeft;
+    y = evento.clientY - canva.offsetTop;
 
-    if(ruta==true){
+    if(crear == true){
         lienzo.lineTo(x,y);
         console.log("Position x:"+x+"y"+y)
         lienzo.stroke();
     }
 }
 
-
-canva.addEventListener("mousemove", dibujar);
-
-canva.addEventListener("mousedown", function(){
-    ruta=true;
+function punteroAbajo(){
+    crear = true;
     lienzo.beginPath();
     lienzo.moveTo(x,y);
     console.log("Position Inicial x:"+x+"y"+y);
     canva.addEventListener("mousemove", dibujar);
-})
+}
 
-
-canva.addEventListener("mouseup", function(){
-    ruta=false;
-})
+function punteroArriba(){
+    crear = false;
+}
 
 function colorTrazo(color){
-    lienzo.strokeStyle=color.value;
+    lienzo.strokeStyle = color.value;
 }
 
 function grosorPluma(grosor) {
-    lienzo.lineWidth=grosor.value;
-    document.getElementById("valor").innerHTML=grosor.value;
+    lienzo.lineWidth = grosor.value;
+    document.getElementById("valor").innerHTML = grosor.value;
 }
 
 function limpiar(){
     lienzo.clearRect(0,0,canva.width, canva.height);
 }
+
+function borrar(){
+    lienzo.strokeStyle = "#FFFFFF";
+}
+
