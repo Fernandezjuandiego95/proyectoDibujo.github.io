@@ -21,20 +21,21 @@
                 <canvas  id="dibujar" width="800px" height="400px"></canvas>
                     <div class="herramienta">
                         <div class="inputdiv">
-                            <input type="color"  onchange="colorTrazo(this)" />
+                            <input type="color"  onchange="colorTrazo(this)" onclick="colorTrazo(this)"/>
                             <input type="range"  onchange="grosorPluma(this)"  min="1" max="20" value="1" /> <span id="valor">1</span>
                             <input type="button" value="limpiar" onclick="limpiar()"/> 
-                            <input type="button" value="Borrar" onclick="borrar()"/>
+                            <input type="button"  value="Borrar" onclick="borrar()"/>
+                           
                         </div>
                     </div>
                    
     </section>  
 
-                 <footer>
+                 <footer> 
                  <p><strong>Juan Diego Fernandez &#169 2022 </strong></p>
-                   <a href="https://github.com/Fernandezjuandiego95/proyectoDibujo"><img src="img/github.svg"></a>
+                 <a href="https://github.com/Fernandezjuandiego95/proyectoDibujo"><img src="img/github.svg"></a>
                 </footer>                    
-              
+                 
     <script src='proceso.js'></script>
 
 </body>
