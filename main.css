@@ -56,7 +56,9 @@ section{
 
  .herramienta{
     display: inline-flex;
-    border: solid 2px;
+    border: outset 15px;
+    border-right: #dcdde1;
+    border-left: #dcdde1;
     border-radius: 2%;
     background-color: #dcdde1;
     width: 30%;
@@ -106,3 +108,140 @@ section{
  .inputdiv{
      position: absolute;
  }
+
+.div1{
+    margin-top: 12px;
+    margin-left: 50px;
+    width: 250px;
+    height: 80px;
+    border-top: solid 1px rgb(152, 156, 158);
+    border-bottom: solid 1px rgb(152, 156, 158);
+}
+
+.inputGuardar{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url(img/guardar32.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    margin-top: 15px;
+    margin-left: 110px;
+}
+.inputGuardar:hover{
+    width: 46px;
+    height: 46px;
+    background-size: 46px;
+}
+.inputGuardar:active{
+    background-size: 36px;
+}
+
+.labelGuardar{
+    width: 90px;
+    margin-top: -13px;
+    margin-left: 80px;
+    position: absolute;
+    background-color: #dcdde1;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family:  cursive;
+    padding-left: 17px;
+}
+
+ .div2{
+     width: 300px;
+     height: 185px;
+     margin-top: 100px;
+     border: inset 4px;
+     margin-left: 30px;
+ }
+
+ .inputcolor{
+     margin-top: 18px;
+     margin-left: 30px;
+ }
+
+.inputBorrar{
+    width: 45px;
+    height: 20px;
+    border: none;
+    margin-top: 30px;
+    margin-left: 25px;
+    background-image: url(img/borardor.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    transform: rotate(-45deg);
+ }
+ .inputBorrar:hover{
+    width: 55px;
+    height: 30px;
+    background-size: 55px;
+ }
+ .inputBorrar:active{
+    background-size: 40px;
+ }
+
+ .inputPintura{
+    width: 40px;
+    height: 39px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+    background-image: url(img/bote.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+ }
+ .inputPintura:hover{
+    width: 45px;
+    height: 44px;
+    background-size: 45px;
+ }
+ .inputPintura:active{
+    background-size: 35px;
+ }
+
+ .div3{
+    width: 330px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 14px;
+    border-top: dotted 4px;
+}
+
+.inputlimpiar{
+    width: 40px;
+    height: 40px;
+    margin-top: 17px;
+    margin-left: 150px;
+    border: none;
+    background-image: url(img/reset.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    border-radius: 50%;
+    animation: rotation 5s infinite linear;
+    
+}
+.inputlimpiar:hover{
+    background-size: 47px;
+    animation: none;
+}
+.inputlimpiar:active{
+    background-size: 35px;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+.lL{
+    width: 130px;
+    margin-left: 100px;
+}

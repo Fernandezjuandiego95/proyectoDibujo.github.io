@@ -19,16 +19,26 @@
     <br>
     <section>
                 <canvas  id="dibujar" width="800px" height="400px"></canvas>
-                    <div class="herramienta">
-                        <div class="inputdiv">
-                            <input type="color"  onchange="colorTrazo(this)" onclick="colorTrazo(this)"/>
-                            <input type="range"  onchange="grosorPluma(this)"  min="1" max="20" value="1" /> <span id="valor">1</span>
-                            <input type="button" value="limpiar" onclick="limpiar()"/> 
-                            <input type="button"  value="Borrar" onclick="borrar()"/>
-                           
+       
+                <div class="herramienta">     
+                        <div class="inputdiv div1">
+                            <label class="labelGuardar">Guardar</label>
+                            <input type="button" class="inputGuardar" /> 
+                        </div>
+
+                        <div class="inputdiv div2">
+                            <input type="color"  onchange="colorTrazo(this)" onclick="colorTrazo(this)" class="inputcolor"/>
+                            <input type="range"  onchange="grosorPluma(this)"  min="1" max="20" value="1" class="inputcolor" /> <span id="valor">1</span>
+                            <input type="button"  onclick="borrar()" class="inputBorrar" />
+                            <input type="button"    class="inputPintura"/>
+                            <!--  <input type="button"  value="Caja de figuras" />-->
+                        </div>
+                        
+                        <div class="inputdiv div3">
+                            <label class="labelGuardar lL">Limpiar lienzo</label>
+                        <input type="button"  onclick="limpiar()" class="inputlimpiar"/> 
                         </div>
                     </div>
-                   
     </section>  
 
                  <footer> 
