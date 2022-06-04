@@ -5,7 +5,7 @@ var canva = document.getElementById("dibujar");
 var lienzo = canva.getContext("2d");
     lienzo.lineWidth = 1;
 var crear = false;
-
+var guardar = document.getElementById("btn_guardar")
 /**
  * Creacion de Eventos para dibujar en el lienzo 
  */
@@ -13,8 +13,9 @@ canva.addEventListener("mousemove", dibujar);
 
 canva.addEventListener("mousedown", punteroAbajo);
 
-canva.addEventListener("mouseup",punteroArriba);
+canva.addEventListener("mouseup", punteroArriba);
 
+guardar.addEventListener("click", descargarImagen);
 /**
  * Creacion de las funciones para dibujar en el lienzo 
  */
@@ -59,3 +60,14 @@ function borrar(){
     lienzo.strokeStyle = "#FFFFFF";
 }
 
+function descargarImagen() {
+    // Crear un elemento <a>
+    let enlace = document.createElement('a');
+    // El título
+    enlace.download = "Canvas como imagen.png";
+    // Convertir la imagen a Base64 y ponerlo en el enlace
+    enlace.href = canva.toDataURL();
+    // Hacer click en él
+    enlace.click();
+    console.log(enlace);
+}
