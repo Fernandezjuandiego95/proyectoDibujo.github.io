@@ -64,10 +64,15 @@ function descargarImagen() {
     // Crear un elemento <a>
     let enlace = document.createElement('a');
     // El título
-    enlace.download = "Canvas como imagen.png";
+    enlace.download = "Mi Dibujo";
     // Convertir la imagen a Base64 y ponerlo en el enlace
     enlace.href = canva.toDataURL();
     // Hacer click en él
     enlace.click();
     console.log(enlace);
 }
+
+
+
+//---------------------------------------------------------------
+//---------------------------------------------------------------

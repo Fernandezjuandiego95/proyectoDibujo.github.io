@@ -5,11 +5,10 @@
 }
 
 body{
-    width: 90%;
+    width: 100%;
     background-image: url(img/wave.svg), url(img/bosque.jpg);
-    background-size: auto 60%, auto;
-    background-position: left top, right 0%;
-    background-repeat: no-repeat, repeat;
+    background-size: 105%, cover;
+    background-repeat: no-repeat, no-repeat;
     
 }
 
@@ -17,7 +16,6 @@ container{
     width: 90%;
     margin-left: 20%;
     display: flex;
-   
 }
 
 h1{
@@ -35,10 +33,9 @@ h1{
 
 section{
     display: block;
-    width: 100%;
+    width: 90%;
     height:25.5rem;
     margin-left: 5%;
- 
 }
  canvas{
      display: inline-flex;
@@ -76,14 +73,12 @@ section{
 
 
  footer{
+    width: 100%;
+    height: 13rem;
     background-image: url(img/waveRR.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 90rem;
-    height: 13rem;
     margin-top: -4.5rem ;
-   
- 
  }
 
  footer p{
@@ -166,7 +161,7 @@ section{
     width: 45px;
     height: 20px;
     border: none;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: 25px;
     background-image: url(img/borardor.png);
     background-repeat: no-repeat;
@@ -186,8 +181,8 @@ section{
     width: 40px;
     height: 39px;
     border: none;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-left: 60px;
     background-image: url(img/bote.png);
     background-repeat: no-repeat;
     background-size: 40px;
@@ -244,4 +239,482 @@ section{
 .lL{
     width: 130px;
     margin-left: 100px;
+}
+
+
+/**Agregando los @media para hacer el sitio adaptable**/
+
+@media all and (max-width:1360px) {
+    section{
+       margin-left: 2%;
+    }
+    .herramienta{
+        margin-left: 2%;
+        width: 25%;
+    }
+    .div1{
+        margin-left: 20px;
+    }
+    .div2{
+        width: 250px;
+        height: 160px;
+        margin-left: 20px;
+    }
+    .inputcolor{
+        margin-top: 18px;
+        margin-left: 20px;
+    }
+    .inputBorrar{
+        margin-top: 50px;
+    }
+    .inputPintura{
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+    .div3{
+        width: 250px;
+        margin-left: 20px;
+    }
+    .lL{
+        margin-left: 60px;
+    }
+    .inputlimpiar{
+        margin-left: 110px;
+    }
+    .inputGuardar{
+        margin-left: 105px;
+    }
+}
+
+@media all and (max-width:1260px) {
+    canvas{
+        width:750px;
+        height: 400px;
+    }
+    .div1{
+        margin-left: 12px;
+        width: 230px;
+    }
+    .div2{
+        width: 220px;
+        height: 160px;
+        margin-left: 20px;
+    }
+    .inputcolor{
+        margin-top: 18px;
+        margin-left: 5px;
+    }
+    .div3{
+        width: 220px;
+    }
+    .lL{
+        margin-left: 50px;
+    }
+    .inputlimpiar{
+        margin-left: 95px;
+    }
+}
+
+@media all and (max-width:1170px) {
+
+    section{
+        width: 75%;
+        height: 500px;
+        margin: auto;
+        flex-direction: column;
+    }
+    canvas{
+        width: 100%;
+    }
+    canvas:hover{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+         box-shadow:none;
+    }
+    .herramienta{
+        width: 100%;
+        height: 100px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        border: outset 8px;
+        border-right: #dcdde1;
+        border-left: #dcdde1;
+    }
+    .herramienta:hover{
+        background-color: #ebebec;
+        -webkit-box-shadow: 0px 13px 9px 0px rgba(226,245,226,1);
+        -moz-box-shadow: 0px 13px 9px 0px rgba(226,245,226,1);
+         box-shadow: 0px 13px 9px 0px rgba(226,245,226,1);
+    }
+    .div1{
+        margin-top: 8px;
+        width: 100px;
+        height: 70px;
+        position: relative;
+    }
+    .labelGuardar{
+        margin-left: 15px;
+        margin-top: -10px;
+        width: 70px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .inputGuardar{
+        width: 36px;
+        height: 36px;
+        background-size: 36px;
+        position: absolute;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .inputGuardar:hover{
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+    .inputGuardar:active{
+        background-size: 35px;
+    }
+    .div2{
+        width: 450px;
+        height: 70px;
+        margin-left: 150px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+    }
+    .inputcolor{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .inputBorrar{
+        margin-top: 25px;
+        margin-left: 60px;
+        width: 36px;
+        height: 18px;
+        background-size: 36px;
+    }
+    .inputBorrar:hover{
+        width: 40px;
+        height: 20px;
+        background-size: 40px;
+    }
+    .inputBorrar:active{
+        background-size: 35px;
+    }
+    .inputPintura{
+        margin-top: 15px;
+        margin-left: 370px;
+        width: 36px;
+        height: 36px;
+        background-size: 36px;
+    }
+    .inputPintura:hover{
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+    .inputPintura:active{
+        background-size: 36px;
+    }
+    .div3{
+        width: 150px;
+        margin-left: 58%;
+        margin-top: 8px;
+    }
+    .lL{
+        margin-left: 22px;
+    }
+    .inputlimpiar{
+        margin-left: 60px;
+    }
+    .size{
+        width: 105px;
+    }
+    #valor{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+}
+
+@media all and (max-width:1060px) {
+
+    .div2{
+        width: 400px;
+        margin-left: 130px;
+    }
+    .inputBorrar{
+        margin-left: 30px;
+    }
+    .inputPintura{
+        margin-left: 340px;
+    }
+}
+
+@media all and (min-width:800px) and (max-width:950px) {
+
+    .div1{
+        width: 90px;
+    }
+    .labelGuardar{
+        margin-left: 10px;
+    }
+    .div2{
+        width: 360px;
+        margin-left: 120px;
+    }
+    .inputcolor{
+        margin-left: 10px;
+    }
+    .inputBorrar{
+        margin-left: 25px;
+    }
+    .inputPintura{
+        margin-left: 300px;
+    }
+    .div3{
+        width: 100px;
+        margin-left: 62%;
+    }
+    .lL{
+        margin-left: 16px;
+    }
+    .size{
+        width: 60px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .inputlimpiar{
+        margin-left: 30px;
+    }
+    a{
+        margin-left: 90%;
+        margin-top: 17%;
+    }
+}
+
+@media all and (min-width:680px) and (max-width:799px) {
+
+    section{
+        width: 80%;
+    }
+    .div1{
+        width: 80px;
+    }
+    .labelGuardar{
+        margin-left: 5px;
+    }
+    .inputGuardar{
+        margin-left: 20px;
+    }
+    .div2{
+        width: 355px;
+        margin-left: 100px;
+    }
+    .inputBorrar{
+        margin-left: 20px;
+    }
+    .inputPintura{
+        margin-left: 300px;
+    }
+    .div3{
+        width: 80px;
+        margin-left: 67%;
+        margin-top: 10px;
+        border-top: none;
+    }
+    .lL{
+        margin-left: 16px;
+    }
+    .size{
+        width: 60px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .inputlimpiar{
+        margin-left: 30px;
+    }
+
+    h1{
+        font-size: 26px;
+        font-family: 'Koulen', cursive;
+    }
+    .verde{
+        width: 15%;
+        height: 10%;
+    } 
+    container{
+        margin-top: 5px;
+    }   
+    footer p{
+        margin-left: 30%;
+    }
+    a{
+        margin-left: 88%;
+        margin-top: 19%;
+    }
+}
+
+@media all and (min-width:501px) and (max-width:679px) {
+
+    section{
+        width: 90%;
+        height: 570px;
+    }
+    canvas{
+        border: solid 3px;
+    }
+    .herramienta{
+        height: 160px;
+    }
+    .div1{
+        width: 80px;
+    }
+    .labelGuardar{
+        margin-left: 5px;
+    }
+    .inputGuardar{
+        margin-left: 20px;
+    }
+    .div2{
+        width: 270px;
+        height: 120px;
+        margin-left: 150px;
+    }
+    .inputcolor{
+        margin-left: 30px;
+    }
+    .inputBorrar{
+        margin-left: -210px;
+        margin-top: 70px;
+    }
+    .inputPintura{
+        margin-left: 140px;
+        margin-top: 60px;
+    }
+    .raya{
+        margin-top: -40px;
+    }
+    #valor{
+        margin-top:25px;
+    }
+    .div3{
+        width: 80px;
+        margin-left: 1%;
+        margin-top: 82px;
+        border-top: none;
+    }
+    .lL{
+        margin-left: 16px;
+    }
+    .size{
+        width: 60px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .inputlimpiar{
+        margin-left: 25px;
+    }
+
+    h1{
+        font-size: 22px;
+        font-family: 'Koulen', cursive;
+    }
+    .verde{
+        width: 18%;
+        height: 13%;
+    } 
+    container{
+        margin-top: 5px;
+    }   
+    footer p{
+        margin-left: 20%;
+        margin-top: 27%;
+    }
+    a{
+        margin-left: 85%;
+        margin-top: 22%;
+    }
+}
+
+@media all and (max-width:500px) {
+    section{
+        width: 90%;
+        height: 570px;
+    }
+    canvas{
+        border: solid 3px;
+    }
+    .herramienta{
+        height: 160px;
+    }
+    .div1{
+        width: 80px;
+    }
+    .labelGuardar{
+        margin-left: 5px;
+    }
+    .inputGuardar{
+        margin-left: 20px;
+    }
+    .div2{
+        width: 270px;
+        height: 120px;
+        margin-left: 110px;
+    }
+    .inputcolor{
+        margin-left: 30px;
+    }
+    .inputBorrar{
+        margin-left: -210px;
+        margin-top: 70px;
+    }
+    .inputPintura{
+        margin-left: 140px;
+        margin-top: 60px;
+    }
+    .raya{
+        margin-top: -40px;
+    }
+    #valor{
+        margin-top:25px;
+    }
+    .div3{
+        width: 80px;
+        margin-left: 1%;
+        margin-top: 82px;
+        border-top: none;
+    }
+    .lL{
+        margin-left: 16px;
+    }
+    .size{
+        width: 60px;
+        height: 20px;
+        overflow: hidden;
+    }
+    .inputlimpiar{
+        margin-left: 25px;
+    }
+
+    h1{
+        font-size: 22px;
+        font-family: 'Koulen', cursive;
+    }
+    .verde{
+        width: 18%;
+        height: 13%;
+    } 
+    container{
+        margin-top: 5px;
+    }   
+    footer p{
+        margin-left: 18%;
+        margin-top: 25%;
+    }
+    a{
+        margin-left: 80%;
+        margin-top: 23%;
+    }
 }
