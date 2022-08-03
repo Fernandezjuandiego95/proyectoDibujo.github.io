@@ -664,21 +664,26 @@ section{
         margin-left: 110px;
     }
     .inputcolor{
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .inputBorrar{
-        margin-left: -210px;
-        margin-top: 70px;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 20px;
     }
     .inputPintura{
-        margin-left: 140px;
-        margin-top: 60px;
+        position: absolute;
+        margin-left: 160px;
+        margin-top: 10px;
     }
     .raya{
-        margin-top: -40px;
+        position: absolute;
+        margin-top: 70px;
+        margin-left: 20px;
     }
     #valor{
-        margin-top:25px;
+        margin-top: 68px;
+        margin-left: 85px;
     }
     .div3{
         width: 80px;
@@ -718,3 +723,4 @@ section{
         margin-top: 23%;
     }
 }
+
