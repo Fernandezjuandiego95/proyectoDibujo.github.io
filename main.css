@@ -556,7 +556,7 @@ section{
     }
 }
 
-@media all and (min-width:501px) and (max-width:679px) {
+@media all and (min-width:600px) and (max-width:679px) {
 
     section{
         width: 90%;
@@ -638,7 +638,7 @@ section{
     }
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:599px) {
     section{
         width: 90%;
         height: 570px;
