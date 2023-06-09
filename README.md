@@ -1,5 +1,5 @@
 # proyectoDibujo
-Crar una app web que permita dibujar en tiempo real
+Craer una app web que permita dibujar en tiempo real
 *crear lineas
 *borrar
 *cambiar color
